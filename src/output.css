@@ -301,6 +301,9 @@
   .m-10 {
     margin: calc(var(--spacing) * 10);
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .mr-1 {
     margin-right: calc(var(--spacing) * 1);
   }
@@ -339,6 +342,15 @@
   }
   .mr-52 {
     margin-right: calc(var(--spacing) * 52);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
   }
   .ml-1 {
     margin-left: calc(var(--spacing) * 1);
@@ -466,6 +478,9 @@
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
   .justify-between {
     justify-content: space-between;
   }
@@ -495,6 +510,9 @@
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
+  }
+  .gap-11 {
+    gap: calc(var(--spacing) * 11);
   }
   .gap-14 {
     gap: calc(var(--spacing) * 14);
@@ -541,6 +559,10 @@
   }
   .rounded-l-lg {
     border-top-left-radius: var(--radius-lg);
+    border-bottom-left-radius: var(--radius-lg);
+  }
+  .rounded-b-lg {
+    border-bottom-right-radius: var(--radius-lg);
     border-bottom-left-radius: var(--radius-lg);
   }
   .rounded-b-md {
