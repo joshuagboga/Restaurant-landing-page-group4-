@@ -6,26 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant webpage</title>
     <link rel="stylesheet" href="/src/output.css">
+    <script src="https://kit.fontawesome.com/fbf4810423.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
     <!-- section-1 -->
-    <section class="h-screen w-screen">
+    <section class="h-screen overflow-x-hiddenhidden">
 
         <h2 class="bg-amber-600 font-bold text-6xl text-center text-white">Crafted with <br> Passion, Served <br> with
             Love.</h2>
         <div class="bg-green-900 text-white pt-14  ">
             <h3 class="text-4xl text-center pb-10 font-bold">Discover Our Menu</h3>
 
-            <div class="grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2 text-center pt-4 pb-4 border-t-2 border-b-2 border-white  ">
+            <div
+                class="grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2 text-center pt-4 pb-4 border-t-2 border-b-2 border-white  ">
                 <p class="text-yellow-400">Starters</p>
                 <p>Main Course</p>
                 <p>Dessert</p>
                 <p>Beverges</p>
             </div>
 
+            <div class="grid lg:grid-cols-3 sm:grid-cols-1">
+                <div class="border border-white rounded-lg m-9 p-5 w-64">
+                    <img class="w-56 h-56 pb-2 rounded-lg" src="/src/images/side-view-fried-onion-rings-with-ketchup-table.jpg" alt="">
+                    <div class="flex justify-center gap-20 ">
+                        <p class="text-xs">Crispy Calamari Rings </p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
 
+                    <div class="grid grid-cols-2">
+                        <p>$40</p>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+
+
+                <div class="border border-white rounded-lg m-9 p-5 w-64 ">
+                    <img class="w-56 h-56 pb-2 rounded-lg" src="/src/images/delicious-melted-cheese-snack.jpg" alt="menu-2">
+                    <div class="flex justify-center gap-20">
+                        <p class="text-xs">Melted Cheese and Meat Sauce </p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                    <div class="grid grid-cols-2">
+                        <p>$70</p>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+
+                <div class="border border-white rounded-lg m-9 p-5 w-64">
+                    <img class="w-56 h-56 pb-2 rounded-lg" src="/src/images/vertical-shot-pile-fried-chicken-wings-some-spices-wooden-table.jpg" alt="">
+                    <div class="flex justify-center gap-20">
+                        <p class="text-xs">Fried Chicken Basket </p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                    <div class="grid grid-cols-2">
+                        <p>$80</p>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </body>
