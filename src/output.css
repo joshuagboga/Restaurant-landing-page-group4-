@@ -202,6 +202,15 @@
   .-inset-6 {
     inset: calc(var(--spacing) * -6);
   }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+  .left-1 {
+    left: calc(var(--spacing) * 1);
+  }
+  .left-1\/2 {
+    left: calc(1 / 2 * 100%);
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -232,6 +241,9 @@
   .table {
     display: table;
   }
+  .h-\[150px\] {
+    height: 150px;
+  }
   .h-\[380px\] {
     height: 380px;
   }
@@ -240,6 +252,9 @@
   }
   .min-h-\[380px\] {
     min-height: 380px;
+  }
+  .w-\[300px\] {
+    width: 300px;
   }
   .w-full {
     width: 100%;
@@ -252,6 +267,22 @@
   }
   .border-collapse {
     border-collapse: collapse;
+  }
+  .-translate-x-1 {
+    --tw-translate-x: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-x-1\/2 {
+    --tw-translate-x: calc(calc(1 / 2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1 {
+    --tw-translate-y: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1\/2 {
+    --tw-translate-y: calc(calc(1 / 2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .resize {
     resize: both;
@@ -277,6 +308,9 @@
   .overflow-hidden {
     overflow: hidden;
   }
+  .rounded {
+    border-radius: 0.25rem;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -301,6 +335,10 @@
     border-top-left-radius: var(--radius-3xl);
     border-top-right-radius: var(--radius-3xl);
   }
+  .rounded-t-\[50\%\] {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
   .rounded-t-\[50\%_50\%\] {
     border-top-left-radius: 50% 50%;
     border-top-right-radius: 50% 50%;
@@ -308,6 +346,10 @@
   .rounded-t-full {
     border-top-left-radius: calc(infinity * 1px);
     border-top-right-radius: calc(infinity * 1px);
+  }
+  .rounded-l-\[50\%_50\%\] {
+    border-top-left-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
   }
   .rounded-tl {
     border-top-left-radius: 0.25rem;
@@ -329,6 +371,19 @@
   }
   .rounded-tr-\[50\%_50\%\] {
     border-top-right-radius: 50% 50%;
+  }
+  .rounded-b-full {
+    border-bottom-right-radius: calc(infinity * 1px);
+    border-bottom-left-radius: calc(infinity * 1px);
+  }
+  .rounded-br-\[50\%\] {
+    border-bottom-right-radius: 50%;
+  }
+  .rounded-br-\[50\%_50\%\] {
+    border-bottom-right-radius: 50% 50%;
+  }
+  .rounded-bl-\[50\%_50\%\] {
+    border-bottom-left-radius: 50% 50%;
   }
   .border {
     border-style: var(--tw-border-style);
@@ -467,6 +522,21 @@
     }
   }
 }
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -488,6 +558,9 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
